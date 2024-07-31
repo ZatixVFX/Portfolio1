@@ -43,10 +43,7 @@ const Skills = () => {
 
   return (
     <>
-      <section
-        className="p-5 mt-5 position-relative"
-        style={{ minHeight: "95vh" }}
-      >
+      <section className="p-5 mt-5 position-relative ">
         <Container className="text-center">
           {/* <h1 className="text-info">Tech Stack</h1>
           <p className="lead pt-3 pb-5">

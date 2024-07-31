@@ -9,14 +9,13 @@ const About = () => {
     <>
       <section
         id="about"
-        className="p-5 pb-2 about-me text-center bg-primary position-relative"
-        style={{ minHeight: "70vh" }}
+        className="p-5 about-me text-center bg-primary position-relative "
       >
-        <Container className="pt-lg-3">
+        <Container className="pt-lg-3 mb-5 py-1">
           <Row className="align-items-center justify-content-between text-light">
-            {/* <Col sm={1}>
-              <svg height="365" width="10" xmlns="http://www.w3.org/2000/svg">
+            {/* <Col sm={1}>"http://www.w3.org/2000/svg">
                 <line
+              <svg height="365" width="10" xmlns=
                   x1="0"
                   y1="0"
                   x2="0"
@@ -46,7 +45,7 @@ const About = () => {
               </p>
             </Col>
             <Col md={6} className="order-md-1 p-5">
-              <Image src={Persona} fluid width="100%" alt="about-me-img" />
+              <Image src={Persona} fluid alt="about-me-img" />
             </Col>
           </Row>
         </Container>
@@ -55,7 +54,7 @@ const About = () => {
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
+          viewBox="0 -1 1200 120"
           preserveAspectRatio="none"
         >
           <path

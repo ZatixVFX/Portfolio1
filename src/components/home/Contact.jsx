@@ -25,7 +25,7 @@ const Contact = () => {
           ></path>
         </svg>
       </div>
-      <section className="p-5 mt-5" style={{ minHeight: "85vh" }}>
+      <section className="p-5 mt-5">
         <Container>
           <div className="text-lg-start text-sm-center">
             <h1>Contact</h1>
