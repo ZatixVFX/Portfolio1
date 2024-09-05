@@ -25,8 +25,8 @@ const Contact = () => {
           ></path>
         </svg>
       </div>
-      <section className="p-5 mt-5">
-        <Container>
+      <section className="p-5 px-2 mt-5">
+        <Container fluid="lg">
           <div className="text-lg-start text-sm-center">
             <h1>Contact</h1>
             <p className="lead pt-2">

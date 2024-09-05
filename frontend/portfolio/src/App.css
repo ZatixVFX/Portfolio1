@@ -10,10 +10,6 @@
   }
 }
 
-.img {
-  height: auto;
-}
-
 /** About divider **/
 
 .about-divider {
@@ -194,37 +190,40 @@
   bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
-}
-
-.img-overlay::before {
-  content: "";
-  display: block;
-  height: 50%;
+  background-color: rgba(0, 0, 0, 0.452);
+  opacity: 0;
+  transition: 0.5s;
+  width: 350px;
+  height: 350px;
 }
 
 .btn-responsive {
-  display: none;
   border: 2px solid #00f0ff;
   background-color: #04151e;
 }
 
-.img-wrapper:hover .img {
-  animation: ImgAnim 0.4s ease 0s 1 normal forwards;
+.img-wrapper:hover .img-overlay {
+  opacity: 1;
 }
 
-.img-overlay:hover .btn-responsive {
-  animation: button 0.4s ease 0s 1 normal forwards;
+.img-wrapper:hover .btn-responsive {
   border-color: #00f0ff;
-  display: inline-block;
 }
 
-@keyframes ImgAnim {
-  0% {
-  }
-  100% {
-    opacity: 30%;
-  }
+.img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-wrapper .img {
+  transition: 0.5s;
+  object-fit: fill;
+}
+
+.img-wrapper:hover .img {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  transform: scale(1.1);
 }
 
 @keyframes button {

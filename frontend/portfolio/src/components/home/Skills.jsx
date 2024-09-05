@@ -43,8 +43,8 @@ const Skills = () => {
 
   return (
     <>
-      <section className="p-5 mt-5 position-relative ">
-        <Container className="text-center">
+      <section className="p-5 px-2 mt-5 position-relative ">
+        <Container fluid="lg" className="text-center">
           {/* <h1 className="text-info">Tech Stack</h1>
           <p className="lead pt-3 pb-5">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -76,14 +76,15 @@ const Skills = () => {
             WebDeveloper
           </p>
 
-          <Row className="align-items-center justify-content-between">
-            <Col>
-              <Row className="align-items-center">
+          <Row>
+            <Col className="pb-lg-0 pb-4">
+              <Row className="align-items-center  justify-content-lg-start justify-content-sm-center">
                 {TechStack.map((tech, index) => (
                   <Col
                     lg={2}
                     md={2}
                     sm={3}
+                    xs={5}
                     key={index}
                     className="rounded-4 pt-3 mx-2 mb-3 icon-border"
                   >

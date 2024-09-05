@@ -9,9 +9,9 @@ const About = () => {
     <>
       <section
         id="about"
-        className="p-5 about-me text-center bg-primary position-relative "
+        className="p-5 px-2 about-me text-center bg-primary position-relative "
       >
-        <Container className="pt-lg-3 mb-5 py-1">
+        <Container fluid="lg" className="pt-lg-3 mb-5 py-1">
           <Row className="align-items-center justify-content-between text-light">
             {/* <Col sm={1}>"http://www.w3.org/2000/svg">
                 <line

@@ -4,13 +4,17 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
+import OralFixShowcase from "../../assets/Projects/OralFix.png";
+import OralFix from "../../assets/Projects/Oral-Fix.svg";
+
 const Projects = () => {
   const myProjects = [
     {
-      name: "placeholder",
+      name: "OralFix",
       url: "",
       sourceCode: "",
-      img: "",
+      img: OralFixShowcase,
+      overlayImg: OralFix,
     },
     {
       name: "placeholder",
@@ -54,26 +58,41 @@ const Projects = () => {
           ></path>
         </svg> */}
       </div>
-      <section className="p-5 projects bg-primary">
-        <Container className="text-center text-light">
+      <section className="p-5 px-2 projects bg-primary">
+        <Container fluid="lg" className="text-center text-light">
           <h1>Projects</h1>
           <p className="lead pt-3 pb-5">
             View my projects that {"I've"} built throughout my career
           </p>
-          <Row className="justify-content-between">
+          <Row className="gy-5">
             {myProjects.map((project) => (
               <>
-                <Col lg={4} md={4} className="p-3 ">
-                  <div className="img-wrapper">
+                <Col className="d-flex justify-content-center">
+                  <div className="img-wrapper ">
                     <Image
-                      src="https://placehold.co/400"
-                      width="75%"
+                      src={
+                        project.name === "placeholder"
+                          ? "https://placehold.co/400?text=Coming+Soon"
+                          : project.img
+                      }
                       className="img"
-                      // height="10%"
                       alt={`${project.name} image`}
+                      style={{
+                        width: "350px",
+                        height: "350px",
+                      }}
                     />
-                    <div className="img-overlay">
-                      <Button className="btn-responsive">View</Button>
+                    <div className="img-overlay mx-auto d-flex flex-column justify-content-center align-items-center">
+                      {project.overlayImg ? (
+                        <Image
+                          src={project.overlayImg}
+                          width="50%"
+                          alt={project.name}
+                        />
+                      ) : null}
+                      <Button size="md" className="btn-responsive mt-4">
+                        View
+                      </Button>
                     </div>
                   </div>
                 </Col>

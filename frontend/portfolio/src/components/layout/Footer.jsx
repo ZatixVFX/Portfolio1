@@ -7,8 +7,8 @@ import Nav from "react-bootstrap/Nav";
 const Footer = () => {
   return (
     <>
-      <footer className="p-5 pt-4 pb-4 bg-primary">
-        <Container>
+      <footer className="p-5 px-2 pt-4 pb-4 bg-primary">
+        <Container fluid="lg">
           {/* <Row>
             <Col>
               <p className="lead">

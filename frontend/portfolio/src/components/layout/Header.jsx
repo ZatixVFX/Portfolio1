@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <>
       <Navbar bg="primary" expand="lg" className="pt-3 pb-2 sticky-top">
-        <Container>
+        <Container fluid="lg">
           <Navbar.Brand href="#" className="fw-bold fs-4">
             Junaid Salie
           </Navbar.Brand>
