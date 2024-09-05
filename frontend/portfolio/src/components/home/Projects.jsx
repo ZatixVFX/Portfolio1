@@ -4,14 +4,14 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
-import OralFixShowcase from "../../assets/Projects/OralFix.png";
+import OralFixShowcase from "../../assets/Projects/Oral_Fix.png";
 import OralFix from "../../assets/Projects/Oral-Fix.svg";
 
 const Projects = () => {
   const myProjects = [
     {
       name: "OralFix",
-      url: "",
+      url: "https://oralfix.netlify.app/",
       sourceCode: "",
       img: OralFixShowcase,
       overlayImg: OralFix,
@@ -90,7 +90,13 @@ const Projects = () => {
                           alt={project.name}
                         />
                       ) : null}
-                      <Button size="md" className="btn-responsive mt-4">
+                      <Button
+                        as="a"
+                        href={project.url}
+                        target="_blank"
+                        size="md"
+                        className="btn-responsive mt-4"
+                      >
                         View
                       </Button>
                     </div>
