@@ -7,6 +7,12 @@ import Image from "react-bootstrap/Image";
 import OralFixShowcase from "../../assets/Projects/Oral_Fix.png";
 import OralFix from "../../assets/Projects/Oral-Fix.svg";
 
+<<<<<<< HEAD
+=======
+import ArtboardShowCase from "../../assets/Projects/Artboard.png";
+import Artboard from "../../assets/Projects/ArtboardLight.svg";
+
+>>>>>>> 2f47fa4 (Add new project)
 const Projects = () => {
   const myProjects = [
     {
@@ -17,10 +23,18 @@ const Projects = () => {
       overlayImg: OralFix,
     },
     {
+<<<<<<< HEAD
       name: "placeholder",
       url: "",
       sourceCode: "",
       img: "",
+=======
+      name: "Admin Dashboard (Demo)",
+      url: "https://admin-dashboard-ayss.onrender.com/",
+      sourceCode: "",
+      img: ArtboardShowCase,
+      overlayImg: Artboard,
+>>>>>>> 2f47fa4 (Add new project)
     },
     {
       name: "placeholder",
