@@ -23,7 +23,11 @@ const Footer = () => {
                 Junaid Salie &#8212; {new Date().getFullYear()}
               </Navbar.Brand>
               <Nav className="ms-sm-auto">
-                <Nav.Link href="#" className="py-0">
+                <Nav.Link
+                  href="https://drive.google.com/file/d/1n0sRiBhzhZJ3tippAr6ZPwuDiItOCH5L/view?usp=sharing"
+                  target="_blank"
+                  className="py-0"
+                >
                   View Resume
                 </Nav.Link>
               </Nav>
