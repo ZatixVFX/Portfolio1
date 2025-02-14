@@ -1,0 +1,260 @@
+.empty-content::before {
+  display: block;
+  content: "";
+  height: 20px;
+}
+
+.text-gradient {
+  font-weight: 900;
+  background: #6f48d8;
+  background: linear-gradient(to right, #6f48d8 0%, #4880ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.surname {
+  background: #5767f1;
+  background: linear-gradient(to right, #5767f1 0%, #3782f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .intro-img {
+    position: relative;
+    top: -40px;
+    height: 500px;
+    width: 450px;
+  }
+}
+
+.about-me-card {
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+  background-color: white;
+  box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+}
+
+.skill-card {
+  border-radius: 1rem;
+  width: 100%;
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 34px -15px rgba(0, 0, 0, 0.55);
+}
+
+.skill-card span svg {
+  transform: scale(0.65);
+}
+
+.skill-cards .col {
+  padding: 0px;
+}
+
+.project-cards img {
+  height: 250px;
+}
+
+@media (min-width: 576px) {
+  .project-cards img {
+    height: 350px;
+  }
+}
+
+.placeholder-card {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bs-gray-400);
+  height: 250px;
+}
+
+.placeholder-card svg {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--bs-grey);
+  font-size: 3.4rem;
+}
+
+@media (min-width: 576px) {
+  .placeholder-card {
+    height: 350px;
+  }
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card-tags div {
+  width: 100%;
+  flex: 0 0 10%;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.card-tags .col {
+  padding: 0px;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+}
+
+.card-links a {
+  display: flex;
+  color: var(--bs-dark);
+  text-decoration: none;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form .row {
+  text-align: start;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-form .col {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (min-width: 992px) {
+  .contact-form .row {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-sm-50 {
+    width: 50% !important;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: start;
+}
+
+@media (min-width: 768px) {
+  .socials {
+    justify-content: center;
+  }
+}
+
+.socials ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.socials li a {
+  color: var(--bs-gray-900);
+}
+
+.copywrite {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  text-align: start;
+}
+
+@media (min-width: 576px) {
+  .copywrite {
+    text-align: end;
+  }
+}
+
+.mapboxgl-map {
+  height: 300px !important;
+  width: 100% !important;
+  border-radius: var(--bs-border-radius);
+  margin: auto;
+}
+
+/* Animations */
+
+.slide-bottom {
+  opacity: 0;
+  animation: slideBottom 1s ease 0.5s 1 normal forwards;
+}
+
+@keyframes slideBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-top {
+  opacity: 0;
+  animation: slideTop 1s ease 0.5s 1 normal forwards;
+}
+
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-right {
+  animation: slideRight 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1s ease 0s 1 normal forwards;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

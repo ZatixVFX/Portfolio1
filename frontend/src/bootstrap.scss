@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$primary: #783ceb;
+$secondary: #1b1d2a;
+$grey: #6c757d;
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "grey": $grey,
+);
+
+$btn-border-radius: 1.5rem;
+$btn-border-radius-lg: 1.5rem;
+$btn-border-radius-sm: 1.5rem;
+
+$navbar-toggler-padding-y: 0px;
+$navbar-toggler-padding-x: 0px;
+$navbar-toggler-border-radius: 0px;
+$navbar-toggler-focus-width: 0px;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
