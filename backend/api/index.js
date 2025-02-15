@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://mail-server-lyart.vercel.app/api",
+    origin: "https://mail-server-lyart.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
