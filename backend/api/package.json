@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "npm run dev --prefix ../frontend",
-    "server": "node server.js",
+    "server": "node index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Junaid Salie",
