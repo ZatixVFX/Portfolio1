@@ -20,7 +20,7 @@ const ContactMe = () => {
     e.preventDefault();
     let id = toast.loading("Sending Message");
     await axios
-      .post("/api/send_mail", {
+      .post(`${import.meta.env.API_URL}/api/send_mail`, {
         name,
         email,
         msg,
