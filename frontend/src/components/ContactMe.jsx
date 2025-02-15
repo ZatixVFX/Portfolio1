@@ -20,7 +20,7 @@ const ContactMe = () => {
     e.preventDefault();
     let id = toast.loading("Sending Message");
     await axios
-      .post("https://mail-server-lyart.vercel.app/api/send_mail", {
+      .post("/api/send_mail", {
         name,
         email,
         msg,
