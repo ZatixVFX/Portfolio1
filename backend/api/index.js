@@ -1,9 +1,9 @@
-import path from "path";
-import express from "express";
-import dotenv from "dotenv";
+const path = require("path");
+const express = require("express");
+const dotenv = require("dotenv");
 dotenv.config();
-import cors from "cors";
-import nodemailer from "nodemailer";
+const cors = require("cors");
+const nodemailer = require("nodemailer");
 
 const port = process.env.PORT;
 
