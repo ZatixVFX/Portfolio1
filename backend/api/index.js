@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "https://junaid-salie.netlify.app/",
+    origin: "https://junaid-salie.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
