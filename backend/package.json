@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "server",
   "main": "server.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run dev --prefix ../../frontend",
-    "server": "node index.js",
+    "client": "npm run dev --prefix ../frontend",
+    "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Junaid Salie",

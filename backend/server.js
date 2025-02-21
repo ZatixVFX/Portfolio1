@@ -1,9 +1,9 @@
-const path = require("path");
-const express = require("express");
-const dotenv = require("dotenv");
+import path from "path";
+import express from "express";
+import dotenv from "dotenv";
 dotenv.config();
-const cors = require("cors");
-const nodemailer = require("nodemailer");
+import cors from "cors";
+import nodemailer from "nodemailer";
 
 const port = process.env.PORT;
 
@@ -22,7 +22,7 @@ app.use(
 
 if (process.env.NODE_ENV === "production") {
   const __dirname = path.resolve();
-  app.use(express.static(path.join(__dirname, "frontend/dist")));
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
   app.get("*", (req, res) =>
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"))
   );
