@@ -4,11 +4,11 @@
   "headers": [
     {
       "source": "/(.*)",
-      "headers": [{ "key": "Allow-Access-Control-Origin", "value": "*" }]
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     },
     {
       "source": "/api",
-      "headers": [{ "key": "Allow-Access-Control-Origin", "value": "*" }]
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
   ]
 }
