@@ -16,7 +16,7 @@ function App() {
   return (
     <section id="home">
       <Header />
-      <ToastContainer />
+      <ToastContainer className="toast-position" />
       <Introduction />
       <AboutMe />
       <Skills />

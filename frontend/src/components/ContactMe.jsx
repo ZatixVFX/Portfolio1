@@ -19,9 +19,8 @@ const ContactMe = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     let id = toast.loading("Sending Message");
-
     await axios
-      .post("https://mail-server-lyart.vercel.app/api/send_mail", {
+      .post("http://localhost:5000/api/send_mail", {
         name,
         email,
         msg,
@@ -36,9 +35,12 @@ const ContactMe = () => {
         });
       })
       .catch((error) => {
+        console.log(error);
         toast.update(id, {
-          render: "Failed to send mail",
-          type: "danger",
+          render: error.response
+            ? error.response.data.msg
+            : "Failed to send message",
+          type: "error",
           isLoading: false,
           closeButton: true,
           autoClose: 5000,

@@ -258,3 +258,13 @@
     transform: translateX(0);
   }
 }
+
+.toast-position {
+  top: 4.09rem !important;
+}
+
+@media (min-width: 992px) {
+  .toast-position {
+    top: 4rem !important;
+  }
+}

@@ -46,7 +46,7 @@ const Footer = () => {
               </p>
               <a
                 className="text-dark"
-                href="https://drive.google.com/file/d/1n0sRiBhzhZJ3tippAr6ZPwuDiItOCH5L/view"
+                href="https://drive.google.com/file/d/1ec1xas6uktFWMXBp0fIAvwEKRJsWqEK6/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
