@@ -19,6 +19,7 @@ const ContactMe = () => {
   const onSubmitHandler = async (e) => {
     e.preventDefault();
     let id = toast.loading("Sending Message");
+
     await axios
       .post("https://mail-server-lyart.vercel.app/api/send_mail", {
         name,
