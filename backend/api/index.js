@@ -4,10 +4,21 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+const rateLimit = require("express-rate-limit");
 
 const port = process.env.PORT;
 
 const app = express();
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  limit: 5,
+  standardHeaders: "draft-8",
+  legacyHeaders: false,
+  message: {
+    msg: "Too many requests, wait time 15 minutes",
+  },
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -45,7 +56,7 @@ const transport = nodemailer.createTransport({
   },
 });
 
-app.post("/api/send_mail", async (req, res) => {
+app.post("/api/send_mail", limiter, async (req, res) => {
   const { name, email, msg } = req.body;
 
   try {
