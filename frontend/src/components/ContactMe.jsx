@@ -35,7 +35,6 @@ const ContactMe = () => {
         });
       })
       .catch((error) => {
-        console.log(error);
         toast.update(id, {
           render: error.response
             ? error.response.data.msg
