@@ -63,7 +63,7 @@ app.post("/api/send_mail", limiter, async (req, res) => {
     await transport.sendMail({
       from: `"No Reply" <no.reply.portfolio.js@gmail.com>`,
       cc: "jsalie165@gmail.com",
-      to: email,
+      to: email.toLowerCase(),
       subject: "Portfolio mail",
       text: msg,
     });
